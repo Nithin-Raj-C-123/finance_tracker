@@ -62,6 +62,120 @@ The project demonstrates clean backend architecture, proper validation, and stru
 
 ## ⚙️ Setup & Run Instructions
 
+
+# 🚀 Setup & Run Instructions
+
+Follow these steps to run the Finance Tracker API project on your local machine.
+
+---
+
+## 📌 1. Clone the Repository
+
+```bash
+git clone <your-repo-link>
+cd finance_tracker-main
+```
+
+---
+
+## 📌 2. Create Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+---
+
+## 📌 3. Activate Virtual Environment
+
+### 👉 For Windows (PowerShell)
+
+```bash
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+.\venv\Scripts\Activate.ps1
+```
+
+### 👉 For Windows (CMD alternative)
+
+```bash
+venv\Scripts\activate.bat
+```
+
+---
+
+## 📌 4. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 📌 5. Install Required Packages (if missing)
+
+```bash
+pip install fastapi uvicorn
+```
+
+---
+
+## 📌 6. Run the Server
+
+```bash
+python -m uvicorn app.main:app --reload
+```
+
+---
+
+## 📌 7. Open in Browser
+
+Once the server starts, open:
+
+👉 http://127.0.0.1:8000
+
+---
+
+## 📌 8. API Documentation (Swagger UI)
+
+👉 http://127.0.0.1:8000/docs
+
+---
+
+## ❗ Troubleshooting
+
+### 🔹 Error: `uvicorn not recognized`
+
+```bash
+pip install uvicorn
+```
+
+### 🔹 Error: `No module named fastapi`
+
+```bash
+pip install fastapi
+```
+
+### 🔹 Error: `running scripts is disabled`
+
+```bash
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
+### 🔹 Virtual environment not activating
+
+Use CMD instead:
+
+```bash
+venv\Scripts\activate.bat
+```
+
+---
+
+## ✅ You're Done!
+
+Your FastAPI server should now be running successfully 🎉
+
+
 ### 🔹 1. Clone the repository
 
 ```bash
